@@ -53,7 +53,7 @@ You can declare strings with either double or single quotations, and you can use
 var nameOne = "Steven";
 var nameTwo = 'Daniel';
 var motto = "Don't be evil";
-var joke = '"Hello, Nick," said Harry.';
+var passage = '"Hello, Nick," said Harry.';
 ```
 Some operations you can use on strings:
 ```
@@ -120,5 +120,40 @@ As a final note, if you want to initialize an empty array, you should use:
 var points = [];
 ```
 ## Functions
+Operatres as one would expect. Here is the syntax:
+```
+function sum(n1, n2) { // A function called "sum" that takes two params and returns their sum.
+  return n1 + n2;
+}
+```
 
 ## Objects
+Here is a definition of an object:
+```
+var president = {
+  firstName:"Frank",
+  lastName:"Underwood",
+  number:46
+}
+```
+To access object parameters, either for obtaining or changing their values, use:
+```
+object.variableName OR object["variableName"]
+// for example...
+var name = president.firstName + " " + president.lastName;
+```
+To define a method, use:
+```
+var president = {
+  firstName:"Frank",
+  lastName:"Underwood",
+  number:46
+  getName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+```
+And to call it...
+```
+var name = president.getName();
+```

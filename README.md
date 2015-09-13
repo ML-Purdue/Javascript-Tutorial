@@ -127,7 +127,31 @@ function sum(n1, n2) { // A function called "sum" that takes two params and retu
 }
 ```
 
-## Objects
+## Objects (Defining using Functions, or Constructors)
+Here is an example of a declaration:
+```
+function President (firstName, lastName, number) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.number = number;
+  this.getName = function() {
+    return this.firstName + " " + this.lastName;
+  };
+}
+```
+And to use it...
+```
+var underwood = new President("Frank", "Underwood", 46);
+var name = underwood.getName();
+```
+To access object parameters, either for obtaining or changing their values, use:
+```
+object.variableName OR object["variableName"]
+// for example...
+var name = president.firstName + " " + president.lastName;
+```
+
+## Objects (Defining using Object Literals)
 Here is a definition of an object:
 ```
 var president = {
@@ -135,12 +159,6 @@ var president = {
   lastName:"Underwood",
   number:46
 }
-```
-To access object parameters, either for obtaining or changing their values, use:
-```
-object.variableName OR object["variableName"]
-// for example...
-var name = president.firstName + " " + president.lastName;
 ```
 To define a method, use:
 ```

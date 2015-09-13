@@ -95,7 +95,7 @@ do {
   // stuff
 } while (condition);
 
-for (i = 0; i < 10; i++) { // executes 10 times
+for (var i = 0; i < 10; i++) { // executes 10 times
   // stuff
 }
 ```

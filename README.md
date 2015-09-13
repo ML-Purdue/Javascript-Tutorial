@@ -115,6 +115,7 @@ Methods for arrays:
 var number = people.length; // The length of the people array
 var sorted = people.sort(); // Returns a sorted array
 people.push("Frank"); // Adds "Frank" to the end of the list
+people.unshift("Sam"); // Adds "Sam" to the beginning of the list
 people.splice(3, 1); // Removes the element at index 3. Note that the 1 represents the number of elements to be removed.
 ```
 As a final note, if you want to initialize an empty array, you should use:

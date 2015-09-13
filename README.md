@@ -139,6 +139,7 @@ function President (firstName, lastName, number) {
   this.getName = function() {
     return this.firstName + " " + this.lastName;
   };
+  return this;
 }
 ```
 And to use it...

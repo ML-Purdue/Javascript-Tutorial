@@ -33,7 +33,7 @@ You can also use numerical operations, again, similar to Java:
 5 - 2      // Results in 3
 5 * 2      // Results in 10
 5 / 2      // Results in 2.5. We don't care that 5 and 2 are both integers, JavaScript gives us a double in return.
-5 $ 2      // Modulus, results in 1.
+5 % 2      // Modulus, results in 1.
 ```
 Boolean operations are also very similar to Java:
 ```

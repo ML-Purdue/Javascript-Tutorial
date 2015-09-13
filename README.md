@@ -61,6 +61,8 @@ var example = "This is a String";
 var len = example.length; // Returns the length of a string
 var longExample = "Hello " + "World!"; // equals "Hello World!"
 var stringPlusNumber = "Size: " + 55; // equals "Size: 55"
+var res = example.charAt(0); // gets the 0th character of the string
+"Hello!" === "Hello!" // how you compare strings for equallity
 ```
 Escape characters work just like in most other languages, include '\n' for newline and '\t' for tabs.
 
